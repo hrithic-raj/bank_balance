@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Balance checking</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="top">
+        <div class="navbar">
+            <h1>HRJ BANK OF INDIA</h1>
+        </div>
+        <div class="container"> 
+            <div class="sidebar">
+                <div class="s_upper"></div>
+                <Button class="m_d_btn" id="m_d_btn" onclick="show_d()">DEPOSIT</Button>
+                <Button class="m_w_btn" id="m_w_btn" onclick="show_w()">WITHDRAW</Button>
+                <Button class="m_b_btn" id="m_b_btn" onclick="show_b()">BALANCE</Button>
+                <!-- <Button class="m_l_btn" id="m_l_btn" onclick="show_l()">LOG</Button> -->
+            </div>
+            <div class="depo" id="depo">
+                <br><br>
+                <h2>DEPOSIT</h2><br>
+                <label for="i_depo">Enter the deposit amount below </label><br><br><br>
+                <input type="number" name="i_depo" id="i_depo"><br><br><br>
+                <button type="submit" id="b_depo" onclick="deposit()">SUBMIT</button>
+            </div>
+            <div class="with" id="with">
+                <br><br>    
+                <h2>WITHDRAW</h2><br>
+                <label for="i_with">Enter the withdraw amount below </label><br><br><br>
+                <input type="number" name="i_with" id="i_with"><br><br><br>
+                <button type="submit" id="b_with" onclick="withdraw()">SUBMIT</button>
+            </div>
+            <div class="bal" id="bal">
+                <br><br>
+                <h2>BALANCE</h2><br>
+                <label>Your current Balance</label>
+                <h3 id="show_bal"></h3>
+            </div>
+            <!-- <div class="log" id="log">
+                <br><br>
+                <h2>LOG</h2><br>
+                <label>Your transaction history</label>
+                <p id="show_log"></p>
+            </div> -->
+        </div>
+    
+    </div>
+        <script src="task.js"></script>
+</body>
+</html>
